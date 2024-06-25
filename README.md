@@ -1,1 +1,3 @@
-# Kodespot-Landing-page
+# Kodespot-Landing-
+
+A landing page for Kodespot Commmunity
