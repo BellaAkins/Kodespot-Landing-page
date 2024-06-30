@@ -13,12 +13,12 @@ body {
   position: relative;
   background: #fff;
 }
-.menu,
-.close,
-.display {
+body .menu,
+body .close,
+body .display {
   display: none;
 }
-h1 {
+body h1 {
   font-size: 3rem;
 }
 
@@ -33,7 +33,7 @@ header {
 header .logo {
   margin-left: 30px;
 }
-nav {
+header nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -45,22 +45,22 @@ nav {
   left: 0;
   flex-wrap: wrap;
 }
-nav ul {
+header nav ul {
   display: flex;
   align-items: center;
   gap: 10px 32px;
   flex-wrap: wrap;
 }
-nav ul a {
+header nav ul a {
   color: #4b5d68;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
   line-height: 24px;
 }
-nav ul a:hover {
+header nav ul a:hover {
   color: #ccac00;
 }
-nav ul a::after {
+header nav ul a::after {
   content: "";
   width: 0;
   height: 2px;
@@ -68,10 +68,10 @@ nav ul a::after {
   display: block;
   transition: 0.2s linear;
 }
-nav ul a:hover::after {
+header nav ul a:hover::after {
   width: 100%;
 }
-nav ul .hero-cta {
+header nav ul .hero-cta {
   background: purple;
   display: flex;
   background: #ccac00;
@@ -80,13 +80,13 @@ nav ul .hero-cta {
   gap: 8px;
   border-radius: 20px;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 1.1rem;
 }
-nav ul .hero-cta:hover {
+header nav ul .hero-cta:hover {
   background: transparent;
   border: 1px solid #ccac00;
 }
-.hero {
+header .hero {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -95,11 +95,10 @@ nav ul .hero-cta:hover {
   gap: 25px;
   text-align: center;
 }
-.hero h1 {
+header .hero h1 {
   font-size: 6rem;
   font-weight: 700;
-  line-height: 87.1px;
-  letter-spacing: -0.025em;
+  line-height: 1.15;
   width: 706px;
   height: 174px;
   margin: 0 auto;
@@ -107,10 +106,10 @@ nav ul .hero-cta:hover {
   text-align: center;
   padding: 0px 5px;
 }
-.hero h1 span {
+header .hero h1 span {
   color: #6468a6;
 }
-.hero p {
+header .hero p {
   font-family: Mulish;
   font-size: 1.313rem;
   font-size: 15px;
@@ -120,108 +119,149 @@ nav ul .hero-cta:hover {
   width: 540px;
   color: #4b5d68;
 }
-.hero .cta-buttons {
+header .hero .cta-buttons {
   display: flex;
   justify-content: center;
   gap: 30px;
   flex-wrap: wrap;
-  margin-top: 35px;
 }
-.hero .cta-buttons a {
+header .hero .cta-buttons a {
   display: flex;
   color: #212353;
   padding: 16px 50px;
   gap: 8px;
   border-radius: 20px;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 600;
 }
-.hero .cta-buttons .get-started {
+header .hero .cta-buttons .get-started {
   background: #ccac00;
 }
-.hero .cta-buttons .get-started:hover {
+header .hero .cta-buttons .get-started:hover {
   background: transparent;
   border: 1px solid #ccac00;
 }
-.hero .cta-buttons #all-tracks {
+header .hero .cta-buttons .all-tracks {
   background: transparent;
   border: 1px solid #ccac00;
 }
-.about .text h1 {
-  font-size: 38px;
+
+.about {
+  padding: 25px;
+}
+.about .about-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.about .about-container .text h1 {
+  font-size: 2.3rem;
   font-weight: 700;
-  line-height: 49.4px;
-  letter-spacing: -0.02em;
+  line-height: 1.15;
   text-align: center;
   color: #212353;
+  padding: 5px;
 }
-.about img {
-  width: 50px;
-}
-.about .about-box-container {
+.about .about-container .about-box-container {
   display: flex;
   align-items: center;
   padding: 10px;
   max-width: 1200px;
   margin: 0 auto;
-  margin-top: 50px;
-  gap: 30px 20px;
+  gap: 30px;
   flex-wrap: wrap;
 }
-.about-box {
+.about .about-container .about-box-container .about-box {
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 15px;
   width: 340px;
   flex-grow: 1;
   box-shadow: 34.85px 29.63px 48.34px 0px rgba(51, 102, 255, 0.0509803922);
   padding: 20px;
   border-radius: 20px;
   border: 1px solid #e5f4f2;
-  margin-top: 20px;
-  gap: 15px;
 }
-.about-box img {
-  width: 70px;
+.about .about-container .about-box-container .about-box img {
   margin: 0 auto;
 }
-.about-text {
+.about .about-container .about-box-container .about-box .about-text {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 20px 15px;
   text-align: center;
 }
-.about-text h3 {
+.about .about-container .about-box-container .about-box .about-text h3 {
   font-size: 28px;
   font-weight: 600;
-  line-height: 36.4px;
-  letter-spacing: -0.01em;
+  line-height: 1.15;
   color: #212353;
 }
-.about-text p {
+.about .about-container .about-box-container .about-box .about-text p {
   font-family: Mulish;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
   color: #4b5d68;
+  width: 310px;
   height: 120px;
   margin: 0 auto;
 }
-.about-box:hover {
+.about .about-container .about-box-container .about-box:hover {
   transform: scale(1.1);
 }
 
+.all-tracks {
+  background: #6468a6;
+}
+.all-tracks .about-container .text h1 {
+  color: #fff;
+}
+.all-tracks .about-container .about-box-container .about-box {
+  background-color: #fff;
+}
+.all-tracks .about-container .about-box-container .about-box .about-text a {
+  display: flex;
+  gap: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.15;
+  text-align: center;
+  color: #212353;
+  margin: 0 auto;
+}
+.all-tracks .about-container .about-box-container .about-box .about-text .arrow {
+  width: 15px;
+}
+.all-tracks .about-container .explore-cta a {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background: #fff;
+  border: 1px solid #ccac00;
+  padding: 16px 30px;
+  gap: 8px;
+  font-family: Poppins;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.15;
+  color: #212353;
+  border-radius: 20px;
+  width: 215px;
+  margin: 0 auto;
+}
+
 @media only screen and (max-width: 680px) {
-  .menu,
-  .close {
+  body .menu,
+  body .close {
     display: block;
     width: 30px;
     cursor: pointer;
   }
-  header .logo {
+  body header .logo {
     margin: 0;
   }
-  .navigation {
+  body header .navigation {
     display: none;
     position: absolute;
     background: #212353;
@@ -231,16 +271,16 @@ nav ul .hero-cta:hover {
     height: 100vh;
     z-index: 1;
   }
-  .navigation ul {
+  body header .navigation ul {
     margin-top: 90px;
     padding: 0;
   }
-  .navigation a {
+  body header .navigation a {
     padding: 16px 32px;
     display: block;
     font-size: 1.4rem;
   }
-  .navigation .hero-cta {
+  body header .navigation .hero-cta {
     background: none;
     color: #4b5d68;
     font-size: 1.4rem;
@@ -251,14 +291,14 @@ nav ul .hero-cta:hover {
     display: block;
     font-size: 1.4rem;
   }
-  .navigation .hero-cta img {
+  body header .navigation .hero-cta img {
     display: none;
   }
-  .navigation .hero-cta:hover {
+  body header .navigation .hero-cta:hover {
     color: #ccac00;
     border: 0;
   }
-  .navigation .hero-cta::after {
+  body header .navigation .hero-cta::after {
     content: "";
     width: 0;
     height: 2px;
@@ -266,22 +306,22 @@ nav ul .hero-cta:hover {
     display: block;
     transition: 0.2s linear;
   }
-  .navigation .hero-cta:hover::after {
+  body header .navigation .hero-cta:hover::after {
     width: 100%;
   }
-  .navigation .close {
+  body header .navigation .close {
     margin: 32px;
     position: absolute;
     right: 0;
     top: -13px;
   }
-  .hero h1 {
+  body header .hero h1 {
     font-size: 4rem;
     width: 300px;
     line-height: 57.1px;
     letter-spacing: -0.025em;
   }
-  .hero p {
+  body header .hero p {
     font-family: Mulish;
     font-size: 1.313rem;
     font-size: 15px;
@@ -292,10 +332,9 @@ nav ul .hero-cta:hover {
     width: 350px;
     color: #4b5d68;
   }
-  .hero .cta-buttons {
+  body header .hero .cta-buttons {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
   }
-}
-
+}/*# sourceMappingURL=style.css.map */
