@@ -13,9 +13,8 @@ body {
   position: relative;
   background: #fff;
 }
-body .menu,
-body .close,
-body .display {
+ .menu,
+ .close, .display {
   display: none;
 }
 body h1 {
