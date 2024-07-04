@@ -8,7 +8,7 @@
   font-family: poppins, sans-serif;
   scroll-behavior: smooth;
 }
-a {
+* a {
   cursor: pointer;
   text-decoration: none;
 }
@@ -17,6 +17,7 @@ body {
   position: relative;
   background: #fff;
 }
+
 .menu,
 .close,
 .display {
@@ -31,9 +32,10 @@ header {
   height: 100vh;
   box-shadow: 34.85px 29.63px 48.34px 0px rgba(51, 102, 255, 0.0509803922);
 }
-.logo img {
+header .logo img {
   width: 128px;
 }
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -91,6 +93,7 @@ nav ul .hero-cta:hover {
   background: transparent;
   border: 1px solid #ccac00;
 }
+
 .hero {
   display: flex;
   flex-direction: column;
@@ -99,12 +102,12 @@ nav ul .hero-cta:hover {
   align-items: center;
   gap: 25px;
   text-align: center;
+  flex-wrap: wrap;
 }
 .hero h1 {
   font-size: 6rem;
   font-weight: 700;
   line-height: 1.15;
-
   margin: 0 auto;
   color: #212353;
   text-align: center;
@@ -122,13 +125,14 @@ nav ul .hero-cta:hover {
   width: 540px;
   color: #4b5d68;
 }
-.hero .cta-buttons {
+
+.cta-buttons {
   display: flex;
   justify-content: center;
   gap: 30px;
   flex-wrap: wrap;
 }
-.hero .cta-buttons a {
+.cta-buttons a {
   display: flex;
   color: #212353;
   padding: 16px 50px;
@@ -137,12 +141,12 @@ nav ul .hero-cta:hover {
   font-size: 1rem;
   font-weight: 600;
 }
-.get-started {
-  background: #ccac00;
+.cta-buttons a:hover {
+  background: #6468a6;
+  color: #fff;
 }
-.get-started:hover {
-  background: transparent;
-  border: 1px solid #ccac00;
+.cta-buttons .get-started {
+  background: #ccac00;
 }
 .cta-buttons .all-tracks {
   background: transparent;
@@ -152,6 +156,7 @@ nav ul .hero-cta:hover {
 .about {
   padding: 25px;
 }
+
 .about-container {
   display: flex;
   flex-direction: column;
@@ -165,6 +170,7 @@ nav ul .hero-cta:hover {
   color: #212353;
   padding: 5px;
 }
+
 .about-box-container {
   display: flex;
   align-items: center;
@@ -174,6 +180,7 @@ nav ul .hero-cta:hover {
   gap: 30px;
   flex-wrap: wrap;
 }
+
 .about-box {
   display: flex;
   flex-direction: column;
@@ -188,6 +195,10 @@ nav ul .hero-cta:hover {
 .about-box img {
   margin: 0 auto;
 }
+.about-box:hover {
+  transform: scale(1.1);
+}
+
 .about-text {
   display: flex;
   flex-direction: column;
@@ -207,9 +218,6 @@ nav ul .hero-cta:hover {
   line-height: 1.15;
   color: #4b5d68;
   background: #fff;
-}
-.about-box:hover {
-  transform: scale(1.1);
 }
 
 .all-tracks {
@@ -231,10 +239,12 @@ nav ul .hero-cta:hover {
   color: #212353;
   margin: 0 auto;
 }
-.all-tracks .arrow {
+
+.arrow {
   width: 15px;
 }
-.all-tracks .explore-cta a {
+
+.explore-cta a {
   display: flex;
   justify-content: center;
   text-align: center;
@@ -252,6 +262,263 @@ nav ul .hero-cta:hover {
   margin: 0 auto;
 }
 
+.community {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.community-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  text-align: center;
+  padding: 50px 40px;
+}
+.community-text h3 {
+  font-family: Poppins;
+  font-size: 2.375rem;
+  font-weight: 700;
+  line-height: 1.15;
+  text-align: center;
+  color: #212353;
+}
+.community-text p {
+  background: #fff;
+  font-size: 2.1rem;
+  max-width: 1280px;
+  margin: 0 auto;
+  color: #4b5d68;
+}
+
+.story {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  background: #6468a6;
+  padding: 50px;
+}
+.story h2 {
+  font-size: 2.375rem;
+  font-weight: 700;
+  line-height: 1.15;
+  text-align: center;
+  color: #fff;
+  padding: 20px;
+}
+
+.story-container {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 30px;
+  flex-wrap: wrap;
+  overflow-y: auto;
+}
+
+.story-box {
+  background: #fff;
+  border: 1px solid #e5f4f2;
+  box-shadow: 34.85px 29.63px 48.34px 0px rgba(51, 102, 255, 0.0509803922);
+  border-radius: 20px;
+  display: flex;
+  width: 300px;
+  margin: 0 auto;
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+
+.story-details {
+  display: flex;
+  flex-direction: column;
+  width: 380px;
+  padding: 30px;
+}
+.story-details img {
+  width: 40px;
+}
+
+.story-text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.story-text h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  line-height: 1.15;
+  color: #111827;
+}
+.story-text p {
+  font-family: Mulish;
+  font-size: 0.8rem;
+  font-weight: 700;
+  line-height: 1.15;
+  color: #ccac00;
+}
+
+.ratings {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 10px;
+}
+.ratings .stars img {
+  width: 20px;
+}
+.ratings p {
+  font-family: Mulish;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: left;
+  color: #2d2d2d;
+}
+
+.support {
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+  padding: 50px 40px;
+}
+.support h3 {
+  font-size: 2.375rem;
+  font-weight: 700;
+  line-height: 1.15;
+  color: #212353;
+}
+.support p {
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: #4b5d68;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.support-cta {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+.support-cta a {
+  display: flex;
+  color: #212353;
+  padding: 16px 50px;
+  gap: 8px;
+  border-radius: 20px;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.support-cta a:hover {
+  background: #6468a6;
+  color: #fff;
+}
+.support-cta .learn-more {
+  background: transparent;
+  border: 1px solid #ccac00;
+}
+.support-cta .donate {
+  background: #ccac00;
+}
+
+footer {
+  padding: 15px 10px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 32px 0;
+  gap: 32px;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.footer-content h3 {
+  max-width: 400px;
+  font-family: Mulish;
+  font-size: 1.3rem;
+  font-weight: 500;
+  line-height: 1.15;
+  text-align: left;
+  color: #4b5d68;
+}
+
+.footer-logo img {
+  width: 120px;
+}
+
+.footer-icons {
+  display: flex;
+  gap: 18px;
+}
+.footer-icons img {
+  width: 35px;
+}
+
+.footer-links,
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  font-size: 0.85rem;
+  flex-grow: 1;
+}
+.footer-links p,
+.footer-content p {
+  color: #212353;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+footer ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+footer ul li a {
+  color: #4b5d68;
+  font-family: Mulish;
+  font-size: 1.1rem;
+  font-weight: 500;
+  line-height: 1.15;
+  text-align: left;
+}
+footer ul li a:hover {
+  color: #6468a6;
+}
+
+hr {
+  background-color: #212353;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 1px;
+}
+
+.copyright {
+  font-family: Mulish;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.15;
+  color: #212353;
+  margin-left: 150px;
+  margin-top: 30px;
+}
+
 @media only screen and (max-width: 680px) {
   .menu,
   .close {
@@ -259,7 +526,7 @@ nav ul .hero-cta:hover {
     width: 30px;
     cursor: pointer;
   }
-  .logo {
+  header .logo {
     margin: 0;
   }
   .navigation {
@@ -292,7 +559,7 @@ nav ul .hero-cta:hover {
     display: block;
     font-size: 1.4rem;
   }
-  .hero-cta img {
+  .navigation .hero-cta img {
     display: none;
   }
   .navigation .hero-cta:hover {
@@ -319,7 +586,6 @@ nav ul .hero-cta:hover {
   .hero h1 {
     font-size: 4rem;
     width: 300px;
-    line-height: 1.15;
   }
   .hero p {
     width: 350px;
